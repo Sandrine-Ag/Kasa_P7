@@ -1,0 +1,20 @@
+.banner {
+    margin: 100px;
+    margin-bottom: 45px;
+    background-color: #000000;
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 223px;
+    opacity: 0.9;
+    border-radius: 25px;
+}
+
+.welcomeHome {
+    
+    padding: 20px;
+    color: #FFFFFF;
+}

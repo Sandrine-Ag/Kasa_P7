@@ -6,7 +6,7 @@ function Page404 () {
             <div className="page404">
                 <h1>404</h1>
                     <p>
-                        <span>Oups! La page que</span>vous demandez n'existe pas.
+                        <span>Oups! La page que </span>vous demandez n'existe pas.
                     </p>
             </div>
             <Link to ="/" className="linkt">

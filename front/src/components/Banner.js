@@ -1,3 +1,4 @@
+import "../styles/banner.css"
 
 function Banner({ imageHome, welcomeHome}) {
     return (
