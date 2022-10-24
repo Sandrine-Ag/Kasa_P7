@@ -1,3 +1,6 @@
+import "../styles/tag.css"
+
+
 function Tag({tags}) {
     return (
         <ul className="tag-box">

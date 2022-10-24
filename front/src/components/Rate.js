@@ -2,6 +2,7 @@ import starColor from "../assets/starColor.png";
 import starWhite from "../assets/starWhite.png";
 import JSON from "../JSON/Logement.json"
 import { useParams, Navigate } from "react-router-dom";
+import "../styles/rate.css"
 
 function Rate () {
     const urlParams = useParams();
@@ -16,30 +17,14 @@ function Rate () {
         {locationData.map((star, index) =>
             stars.map((stars) =>
                 star.rating <= stars - 1 ? (
-                    <img src={starWhite} alt="empty-star" key={`${index}-${stars}`} />
+                    <img src={starWhite} alt="empty-star" key={`${index}-${stars}`} className="star"/>
                     ) : (
-                    <img src={starColor} alt="full-star" key={`${index}-${stars}`} />
-                    )
+                    <img src={starColor} alt="full-star" key={`${index}-${stars}`} className="star"/>
+                )
             )
         )}
         </div>
     )
 }
-
-
-
-// function Rate ({ rating}) {
-//     const stars = [1,2,3,4,5]
-//     return(
-//         <div className="rate">
-//             {stars.map((starange) =>
-//             rating >= starange ? (
-//                 <img key = {starange} src = {starColor} alt = "starColor" className="starColor" /> 
-//             ) : (
-//                 <img key = {starange} src = {starWhite} alt = "starWhite" className="starWhite" /> 
-//             ))}
-//         </div>
-//     )
-// }
 
 export default Rate;

@@ -1,8 +1,10 @@
+import "../styles/host.css"
+
 function Host({ host }) {
     return (
       <div className="host">
-        <div className="host__name">{host.name}</div>
-        <img src={host.picture} alt={host.name} className="host__picture" />
+        <div className="name">{host.name}</div>
+        <img src={host.picture} alt={host.name} className="picture" />
       </div>
     );
   }

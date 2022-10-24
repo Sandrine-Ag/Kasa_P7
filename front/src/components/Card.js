@@ -7,7 +7,7 @@ function Card () {
     return (
         <div className="cards">
             {JSON.map ((element) => (
-                <Link to = { `location/${element.id}`} 
+                <Link to = { `logement/${element.id}`} 
                     key = {element.id} 
                     className="card"
                 >
@@ -17,20 +17,6 @@ function Card () {
             ))}
         </div> 
     )
-    // return (
-    //     <div className="cards">
-    //         {JSON.map((element) => (
-    //             <Link to = {`/location/${element.id}` }
-    //             key = {element.id}
-    //             className = "card"
-    //             >
-    //                 <div className="title-card">
-    //                     {`${element.title}`}
-    //                 </div>
-    //             </Link>
-    //         ))}
-    //     </div>
-    // )
 }
 
 export default Card;

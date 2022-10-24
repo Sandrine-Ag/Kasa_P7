@@ -1,22 +1,27 @@
+/* footer */
+
 .footer {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-color: white;
-background-color: black;
-height: 210px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    background-color: black;
+    height: 209px;
+    margin: auto;
 }
 
 .logofooter {
-    width: 122px;
-    height: 40px;
+    margin: 10px 0 30px;
 }
 
 .copyright {
+    font-size: large;
     display: flex;
-align-items: flex-end;
-text-align: center;
-font-weight: 500;
-color: white;
+    align-items: flex-end;
+    text-align: center;
+    font-weight: 500;
+    color: white;
 }

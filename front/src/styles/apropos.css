@@ -1,0 +1,29 @@
+/* page a propos */
+
+.apropos {
+    padding: 0 50px;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.contentCollapse {
+    padding: 0 50px;
+    width: 1023px;
+    margin: 0 auto;
+}
+
+@media (max-width: 820px) {
+    .apropos {
+        padding: 10px 35px;
+    }
+
+    .contentCollapse {
+        padding: 0 0;
+        width: 345px;
+    }
+
+    .details {
+        margin: -18px;
+    }
+}
