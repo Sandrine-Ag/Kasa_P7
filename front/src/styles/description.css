@@ -40,9 +40,16 @@
         margin-top: -20px;
         
     }
+    .card2 {
+        /* display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center; */
+        align-items: flex-start;
+    }
+
     .descEquip {
         flex-direction: column;
-        margin-top: 40px;
     }
     .desc, .equip {
         width: 100%;

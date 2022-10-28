@@ -5,7 +5,7 @@ import { useParams, Navigate } from "react-router-dom";
 import JSON from "../JSON/Logement.json"
 import "../styles/slideshow.css"
 
-function Slideshow (id) {
+function Slideshow () {
     const [current, setCurrent] = useState(0);
     const urlParams = useParams();
     const logementData = JSON.filter((data) => data.id === urlParams.id);
@@ -14,10 +14,10 @@ function Slideshow (id) {
     if (logementData === []) {
         return <Navigate to="*" />;
     }
-    const nextSlide = () => {
+    function nextSlide () {
         setCurrent(current === lengthArray - 1 ? 0 : current + 1);
     };
-    const prevSlide = () => {
+    function prevSlide () {
         setCurrent(current === 0 ? lengthArray - 1 : current - 1);
     };
 

@@ -24,11 +24,11 @@
     }
 
     .host {
-        position: relative;
-        
+        /* position: relative;
         text-align: left;
         right: 5px;
-        top: 5px;
+        top: 5px; */
+        width: 100%;
     }
 
     .picture {
